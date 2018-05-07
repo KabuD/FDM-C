@@ -24,7 +24,6 @@ int main(void)
 	USART_Conf();
 
     freePosition=0;
-    _STOP_MEAS=1;
 
 	/* Infinite loop */
 	while (1)
