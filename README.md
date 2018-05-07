@@ -9,6 +9,6 @@
 
 -Program do sprawdzenia
 
--ProgramPy zawiera kod aplikacji w pythonie
+-PYprogram zawiera kod aplikacji w pythonie
 
 -12-08-29-07-May-2018.csv to przykladowy stworzony plik
