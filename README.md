@@ -1,10 +1,10 @@
 # FDM-C README
 
 # Issues
-* Zrobic wszystko
+* None
 
 			
 # Changes
-2018-03-16
+2018-05-05
 
--utworzenie projektu
+-Program do sprawdzenia
