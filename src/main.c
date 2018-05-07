@@ -12,6 +12,7 @@
 #include "nvic.h"
 #include "tim.h"
 #include "spi.h"
+#include "usart.h"
 
 int main(void)
 {
@@ -20,10 +21,15 @@ int main(void)
 	NVIC_Conf();
 	TIM_Conf();
 	SPI_Conf();
+	USART_Conf();
 
+    freePosition=0;
+    _STOP_MEAS=1;
 
 	/* Infinite loop */
-	while (1);
+	while (1)
+	{
+	}
 }
 
 

@@ -18,5 +18,6 @@
 ////// Prototypes //////
 void TIM_Conf(void);
 void delay_ms(int time);
+void delay_us(int time);
 
 #endif /* TIM_H_ */

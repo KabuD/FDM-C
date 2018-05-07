@@ -27,13 +27,22 @@ EXTI_InitTypeDef   EXTI_InitStructure;
 ********************************************************************/
 void NVIC_Conf(void)
 {
-	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_3);
+	//NVIC_PriorityGroupConfig(NVIC_PriorityGroup_3);
 
 	NVIC_InitStructure.NVIC_IRQChannel = TIM3_IRQn;
 	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0x00;
 	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0x00;
 	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
 	NVIC_Init(&NVIC_InitStructure);
+
+	USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);
+	NVIC_InitStructure.NVIC_IRQChannel = USART1_IRQn;
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0x00;
+	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0x00;
+	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+	NVIC_Init(&NVIC_InitStructure);
+
+	NVIC_EnableIRQ(USART1_IRQn);
 }
 
 

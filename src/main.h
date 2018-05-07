@@ -11,8 +11,16 @@
 
 ////// Includes //////
 #include "stm32f4xx.h"
-
+#include "math.h"
 ////// Defines //////
 
+////// Array  //////
+uint16_t _MEASUREMENTS[20000];
+
+////// GLOBAL VARIABLES //////
+char _STOP_MEAS; // loop enabler
+uint16_t freePosition; // position of array
+uint8_t part_A;  // first half of measurement to send
+uint8_t part_B; // second half of measurement to send
 
 #endif /* MAIN_H_ */

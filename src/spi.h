@@ -22,6 +22,6 @@ void SPI_Conf(void);
 void _chip_Select();
 void _chip_Deselect();
 
-uint8_t SPI_Transfer(uint8_t addr);
+uint16_t SPI_Transfer(uint16_t addr);
 
 #endif /* SPI_H_ */
